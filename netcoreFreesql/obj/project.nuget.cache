@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "SXkzb1ENAcWWpynYLfZeXP7huPz1I4t8/Sk6NhJIm10oAKr2jzfSMoD6t0kvl+1d1tgvAEbp41AlPoigWxp/aQ==",
+  "success": true,
+  "projectFilePath": "E:\\c# project\\FreeSqlTool\\netcoreFreesql\\netcoreFreesql.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\freesql\\2.0.105\\freesql.2.0.105.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\freesql.dbcontext\\2.0.105\\freesql.dbcontext.2.0.105.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\freesql.provider.postgresql\\2.0.105\\freesql.provider.postgresql.2.0.105.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\freesql.provider.sqlite\\2.0.105\\freesql.provider.sqlite.2.0.105.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\nettopologysuite\\2.0.0\\nettopologysuite.2.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\nettopologysuite.io.postgis\\2.0.0\\nettopologysuite.io.postgis.2.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\npgsql\\4.1.6\\npgsql.4.1.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\npgsql.legacypostgis\\4.1.6\\npgsql.legacypostgis.4.1.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\npgsql.nettopologysuite\\4.1.6\\npgsql.nettopologysuite.4.1.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.113.1\\stub.system.data.sqlite.core.netstandard.1.0.113.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.data.sqlite.core\\1.0.113.6\\system.data.sqlite.core.1.0.113.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

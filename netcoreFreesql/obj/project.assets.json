@@ -1,0 +1,788 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "FreeSql/2.0.105": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FreeSql.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeSql.dll": {}
+        }
+      },
+      "FreeSql.DbContext/2.0.105": {
+        "type": "package",
+        "dependencies": {
+          "FreeSql": "2.0.105",
+          "Microsoft.Extensions.DependencyInjection": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/FreeSql.DbContext.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FreeSql.DbContext.dll": {}
+        }
+      },
+      "FreeSql.Provider.PostgreSQL/2.0.105": {
+        "type": "package",
+        "dependencies": {
+          "FreeSql": "2.0.105",
+          "Newtonsoft.Json": "12.0.3",
+          "Npgsql.LegacyPostgis": "4.1.6",
+          "Npgsql.NetTopologySuite": "4.1.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/FreeSql.Provider.PostgreSQL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeSql.Provider.PostgreSQL.dll": {}
+        }
+      },
+      "FreeSql.Provider.Sqlite/2.0.105": {
+        "type": "package",
+        "dependencies": {
+          "FreeSql": "2.0.105",
+          "System.Data.SQLite.Core": "1.0.113.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/FreeSql.Provider.Sqlite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeSql.Provider.Sqlite.dll": {}
+        }
+      },
+      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.OpenApi/1.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        }
+      },
+      "NetTopologySuite/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {}
+        }
+      },
+      "NetTopologySuite.IO.PostGis/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NetTopologySuite": "[2.0.0, 3.0.0-A)"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.IO.PostGis.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.IO.PostGis.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Npgsql/4.1.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        }
+      },
+      "Npgsql.LegacyPostgis/4.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Npgsql": "4.1.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.LegacyPostgis.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.LegacyPostgis.dll": {}
+        }
+      },
+      "Npgsql.NetTopologySuite/4.1.6": {
+        "type": "package",
+        "dependencies": {
+          "NetTopologySuite.IO.PostGIS": "2.0.0",
+          "Npgsql": "4.1.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.NetTopologySuite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.NetTopologySuite.dll": {}
+        }
+      },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.113.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "5.6.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "5.6.3",
+          "Swashbuckle.AspNetCore.SwaggerUI": "5.6.3"
+        },
+        "build": {
+          "build/Swashbuckle.AspNetCore.props": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.2.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "5.6.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/5.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "System.Data.SQLite.Core/1.0.113.6": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "1.0.113.1"
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FreeSql/2.0.105": {
+      "sha512": "ghtFQtzYmBbb7EDRXJ1q2tCpMgvF9PzZWFSaKxVi/CeYPBfeKgYug3vIZMEYtn7fWG7BwSR/SXsJBRF1N8plFw==",
+      "type": "package",
+      "path": "freesql/2.0.105",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freesql.2.0.105.nupkg.sha512",
+        "freesql.nuspec",
+        "lib/net40/FreeSql.dll",
+        "lib/net40/FreeSql.xml",
+        "lib/net45/FreeSql.dll",
+        "lib/net45/FreeSql.xml",
+        "lib/netstandard2.0/FreeSql.dll",
+        "lib/netstandard2.0/FreeSql.xml",
+        "logo.png"
+      ]
+    },
+    "FreeSql.DbContext/2.0.105": {
+      "sha512": "druPnt3AJS0w8dOqv1eQnAQwA17KOQxB1cqktKfCGTlrp8tITDF5/Per7Ay/BUGmN9E0lEJIeDKbGuPU3kv42g==",
+      "type": "package",
+      "path": "freesql.dbcontext/2.0.105",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freesql.dbcontext.2.0.105.nupkg.sha512",
+        "freesql.dbcontext.nuspec",
+        "lib/net40/FreeSql.DbContext.dll",
+        "lib/net40/FreeSql.DbContext.xml",
+        "lib/net45/FreeSql.DbContext.dll",
+        "lib/net45/FreeSql.DbContext.xml",
+        "lib/net5.0/FreeSql.DbContext.dll",
+        "lib/net5.0/FreeSql.DbContext.xml",
+        "lib/netcoreapp2.1/FreeSql.DbContext.dll",
+        "lib/netcoreapp2.1/FreeSql.DbContext.xml",
+        "lib/netcoreapp3.1/FreeSql.DbContext.dll",
+        "lib/netcoreapp3.1/FreeSql.DbContext.xml",
+        "lib/netstandard2.0/FreeSql.DbContext.dll",
+        "lib/netstandard2.0/FreeSql.DbContext.xml",
+        "logo.png"
+      ]
+    },
+    "FreeSql.Provider.PostgreSQL/2.0.105": {
+      "sha512": "7kyZxKzQYAztKnut2V+lKEi93rIL4JMWMxk2Jtl9UAAK6hEdHDZ6TdAl1el0JkF4zMJfcLlxtp3Bnm1GsmQWRw==",
+      "type": "package",
+      "path": "freesql.provider.postgresql/2.0.105",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freesql.provider.postgresql.2.0.105.nupkg.sha512",
+        "freesql.provider.postgresql.nuspec",
+        "lib/net45/FreeSql.Provider.PostgreSQL.dll",
+        "lib/net451/FreeSql.Provider.PostgreSQL.dll",
+        "lib/net452/FreeSql.Provider.PostgreSQL.dll",
+        "lib/net461/FreeSql.Provider.PostgreSQL.dll",
+        "lib/netstandard2.0/FreeSql.Provider.PostgreSQL.dll",
+        "logo.png"
+      ]
+    },
+    "FreeSql.Provider.Sqlite/2.0.105": {
+      "sha512": "qV1SAgMs8Yl3e8qBXnIJAX/A8B+x04EaIsVMyFv9i3b9tAwfAqAJKpegKSM8/sG5jeLXlkw8sxV565ticKhGlQ==",
+      "type": "package",
+      "path": "freesql.provider.sqlite/2.0.105",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freesql.provider.sqlite.2.0.105.nupkg.sha512",
+        "freesql.provider.sqlite.nuspec",
+        "lib/net40/FreeSql.Provider.Sqlite.dll",
+        "lib/net45/FreeSql.Provider.Sqlite.dll",
+        "lib/netstandard2.0/FreeSql.Provider.Sqlite.dll",
+        "logo.png"
+      ]
+    },
+    "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+      "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
+      "type": "package",
+      "path": "microsoft.extensions.apidescription.server/3.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Extensions.ApiDescription.Server.props",
+        "build/Microsoft.Extensions.ApiDescription.Server.targets",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
+        "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+        "microsoft.extensions.apidescription.server.nuspec",
+        "tools/Newtonsoft.Json.dll",
+        "tools/dotnet-getdocument.deps.json",
+        "tools/dotnet-getdocument.dll",
+        "tools/dotnet-getdocument.runtimeconfig.json",
+        "tools/net461-x86/GetDocument.Insider.exe",
+        "tools/net461-x86/GetDocument.Insider.exe.config",
+        "tools/net461/GetDocument.Insider.exe",
+        "tools/net461/GetDocument.Insider.exe.config",
+        "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
+        "tools/netcoreapp2.1/GetDocument.Insider.dll",
+        "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "sha512": "Rc2kb/p3Ze6cP6rhFC3PJRdWGbLvSHZc0ev7YlyeU6FmHciDMLrhoVoTUEzKPhN5ZjFgKF1Cf5fOz8mCMIkvpA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.OpenApi/1.2.3": {
+      "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
+      "type": "package",
+      "path": "microsoft.openapi/1.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Microsoft.OpenApi.dll",
+        "lib/net46/Microsoft.OpenApi.pdb",
+        "lib/net46/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.2.3.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "NetTopologySuite/2.0.0": {
+      "sha512": "3ajBClEI9wx2/DjjGmV52sHW1m52vLg8sdz1pJbTf5ySj1X90qehQs3v1DRwGo0F8UKj/Z2SjNhRN/6LroAkqg==",
+      "type": "package",
+      "path": "nettopologysuite/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NetTopologySuite.dll",
+        "lib/netstandard2.0/NetTopologySuite.xml",
+        "nettopologysuite.2.0.0.nupkg.sha512",
+        "nettopologysuite.nuspec"
+      ]
+    },
+    "NetTopologySuite.IO.PostGis/2.0.0": {
+      "sha512": "f4PAE9VTUfM8w+SOlFcsvn5/S9e5SQywmEPsCMAVgfiemwHw9NKSB4Jnn4+U/jl5hN9tUutHxpHnOUx2Pqm6Ew==",
+      "type": "package",
+      "path": "nettopologysuite.io.postgis/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NetTopologySuite.IO.PostGis.dll",
+        "lib/netstandard2.0/NetTopologySuite.IO.PostGis.xml",
+        "nettopologysuite.io.postgis.2.0.0.nupkg.sha512",
+        "nettopologysuite.io.postgis.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Npgsql/4.1.6": {
+      "sha512": "JXB41gWNXTOu+d9AfqgGLMY1B6OIuTOiX43PypKun5e4XWjKgzINwA0oryBm5ewAJrZGFQbhllxvdPXgToi2/Q==",
+      "type": "package",
+      "path": "npgsql/4.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Npgsql.dll",
+        "lib/net461/Npgsql.xml",
+        "lib/netcoreapp3.0/Npgsql.dll",
+        "lib/netcoreapp3.0/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.4.1.6.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.LegacyPostgis/4.1.6": {
+      "sha512": "ihCaYnwBwoQAZQuLSJ10hWhJDId6zrb2bhXnuvuTG9midb215d2DkdMzh2ZFin6aCBpS7+JJhb5qMDb2xyXO9A==",
+      "type": "package",
+      "path": "npgsql.legacypostgis/4.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Npgsql.LegacyPostgis.dll",
+        "lib/net461/Npgsql.LegacyPostgis.xml",
+        "lib/netstandard2.0/Npgsql.LegacyPostgis.dll",
+        "lib/netstandard2.0/Npgsql.LegacyPostgis.xml",
+        "npgsql.legacypostgis.4.1.6.nupkg.sha512",
+        "npgsql.legacypostgis.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.NetTopologySuite/4.1.6": {
+      "sha512": "N0oOzAVr19gqqpAcZdPEBYSY4KngndQX6woO3/SDAq6AoCVHZnVPj2PW5z9Nch3P4NSJjqwr9JJPzIroKHbmXA==",
+      "type": "package",
+      "path": "npgsql.nettopologysuite/4.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Npgsql.NetTopologySuite.dll",
+        "lib/net461/Npgsql.NetTopologySuite.xml",
+        "lib/netstandard2.0/Npgsql.NetTopologySuite.dll",
+        "lib/netstandard2.0/Npgsql.NetTopologySuite.xml",
+        "npgsql.nettopologysuite.4.1.6.nupkg.sha512",
+        "npgsql.nettopologysuite.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.113.1": {
+      "sha512": "qFjwuCuZlTz3yT06gaueDJwTykiblNeaLTx3sONXoNlLm2NJwghLvr+W9fvRevKcYcIRiKrq6WJ56QwZJq9fnQ==",
+      "type": "package",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.113.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/System.Data.SQLite.dll",
+        "lib/netstandard2.0/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.0/System.Data.SQLite.xml",
+        "lib/netstandard2.1/System.Data.SQLite.dll",
+        "lib/netstandard2.1/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.1/System.Data.SQLite.xml",
+        "runtimes/linux-x64/native/SQLite.Interop.dll",
+        "runtimes/osx-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x86/native/SQLite.Interop.dll",
+        "stub.system.data.sqlite.core.netstandard.1.0.113.1.nupkg.sha512",
+        "stub.system.data.sqlite.core.netstandard.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore/5.6.3": {
+      "sha512": "UkL9GU0mfaA+7RwYjEaBFvAzL8qNQhNqAeV5uaWUu/Z+fVgvK9FHkGCpTXBqSQeIHuZaIElzxnLDdIqGzuCnVg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Swashbuckle.AspNetCore.props",
+        "swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/5.6.3": {
+      "sha512": "rn/MmLscjg6WSnTZabojx5DQYle2GjPanSPbCU3Kw8Hy72KyQR3uy8R1Aew5vpNALjfUFm2M/vwUtqdOlzw+GA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/5.6.3": {
+      "sha512": "CkhVeod/iLd3ikVTDOwG5sym8BE5xbqGJ15iF3cC7ZPg2kEwDQL4a88xjkzsvC9oOB2ax6B0rK0EgRK+eOBX+w==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/5.6.3": {
+      "sha512": "BPvcPxQRMsYZ3HnYmGKRWDwX4Wo29WHh14Q6B10BB8Yfbbcza+agOC2UrBFA1EuaZuOsFLbp6E2+mqVNF/Je8A==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
+      ]
+    },
+    "System.Data.SQLite.Core/1.0.113.6": {
+      "sha512": "8Iyo9b2iG29eYCGjnly6EdF+yw20q83vRTkK9zpJzip5QvQeRSs7rQPmaxg+R2oJKNL8w/6K274F6YHXkEjq5w==",
+      "type": "package",
+      "path": "system.data.sqlite.core/1.0.113.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "system.data.sqlite.core.1.0.113.6.nupkg.sha512",
+        "system.data.sqlite.core.nuspec"
+      ]
+    },
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "type": "package",
+      "path": "system.memory/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "sha512": "HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "FreeSql >= 2.0.105",
+      "FreeSql.DbContext >= 2.0.105",
+      "FreeSql.Provider.PostgreSQL >= 2.0.105",
+      "FreeSql.Provider.Sqlite >= 2.0.105",
+      "Newtonsoft.Json >= 12.0.3",
+      "Swashbuckle.AspNetCore >= 5.6.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\c# project\\FreeSqlTool\\netcoreFreesql\\netcoreFreesql.csproj",
+      "projectName": "netcoreFreesql",
+      "projectPath": "E:\\c# project\\FreeSqlTool\\netcoreFreesql\\netcoreFreesql.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\c# project\\FreeSqlTool\\netcoreFreesql\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "FreeSql": {
+            "target": "Package",
+            "version": "[2.0.105, )"
+          },
+          "FreeSql.DbContext": {
+            "target": "Package",
+            "version": "[2.0.105, )"
+          },
+          "FreeSql.Provider.PostgreSQL": {
+            "target": "Package",
+            "version": "[2.0.105, )"
+          },
+          "FreeSql.Provider.Sqlite": {
+            "target": "Package",
+            "version": "[2.0.105, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
